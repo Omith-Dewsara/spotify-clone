@@ -1,0 +1,40 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 30px 0;
+}
+
+.header__left {
+	background-color: #fff;
+	color: grey !important;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	flex: 0.6;
+	min-width: 70px;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+.header__left > input {
+	border: none;
+	width: 100%;
+	outline-width: 0;
+	padding: 0 0 0 5px;
+	font-weight: 600;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+}
+
+.header__right > h4 {
+	margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 760px) {
+	.header__left {
+		display: none;
+	}
+}

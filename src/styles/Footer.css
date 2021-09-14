@@ -1,0 +1,122 @@
+.footer {
+	position: fixed;
+	bottom: 0;
+	height: 65px;
+	width: 100%;
+	background: #282828;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.footer__left {
+	flex: 0.3;	
+	display: flex;
+	align-items: center;
+	color: #fff;
+	width: 300px;
+	overflow: hidden;
+}
+
+
+.footer__albumLogo {
+	height: 60px;
+	width: 60px;
+	margin: 0 20px 0 0;
+	object-fit: contain;
+}
+
+.footer__center {
+	flex: 0.4;
+	padding: 0 100px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 300px;
+}
+
+.footer__green {
+	color: #1ed15e;
+}
+
+.footer__songInfo {
+	font-size: 12px;
+}
+
+.footer__icon {
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+	transition: transform 200ms ease-in;
+	transform: scale(1.2) !important;
+}
+
+.footer__right {
+	flex: 0.3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+	min-width: 300px;
+}
+
+.footer__right * .MuiSlider-root {
+	color: green;
+}
+
+.footer__rightOptions {
+	display: flex;
+	align-items: center;
+}
+
+.footer__rightOptions > div  {
+	display: flex;
+	font-size: 20px;
+}
+
+.footer__slider {
+	max-width: 200px;
+}
+
+@media screen and (max-width: 760px) {
+	.footer {
+		justify-content: space-between;
+	}
+
+	.footer__center,
+	.footer__right,
+	.footer__left {
+		padding: 0;
+	} 	
+
+	.footer__center {
+		padding: 0 20px;
+	}
+
+	.footer__right {
+		min-width: 150px;
+		display: flex;
+		padding: 0 0 0 30px;
+	}
+
+	.footer__rightOptions > div {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.footer__rightOptions {
+		display: flex;
+		max-width: 100px;
+		flex-direction: column;
+	}
+
+	.footer__slider {
+		min-width: 100px;
+	}
+}
